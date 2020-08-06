@@ -7,7 +7,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import { Box } from "@material-ui/core";
 
-const Speaker_info = [
+const SpeakerInfo = [
   {
     title: "Speaker1",
     description:
@@ -27,11 +27,6 @@ const Speaker_info = [
     title: "Speaker4",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
-  },
-  {
-    title: "Speaker5",
-    description:
-      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
   }
 ];
 
@@ -42,12 +37,12 @@ const useStyles = makeStyles({
   }
 });
 
-const Speaker_card = () => {
+const SpeakerCard = () => {
   const classes = useStyles();
   return (
     <>
-      <Box display="flex" flexDirection="row" justifyContent="center">
-        {Speaker_info.map(data => {
+      <Box mx={3} display="flex" flexDirection="row" justifyContent="center">
+        {SpeakerInfo.map(data => {
           return (
             <Card className={classes.root}>
               <CardActionArea>
@@ -83,4 +78,4 @@ const Speaker_card = () => {
     </>
   );
 };
-export default Speaker_card;
+export default SpeakerCard;
