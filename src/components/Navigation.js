@@ -24,45 +24,48 @@ const Navigation = () => {
                 <Link to="/">Home</Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/Committee">Committee</Link>
+                <Link to="/committee">Committee</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/special-session">Special Session</Link>
               </Nav.Link>
               <NavDropdown title="Papers" id="basic-nav-dropdown">
                 <NavDropdown.Item>
-                  <Link to={"/Call-For-Papers"}>Call for papers</Link>
+                  <Link to={"/call-for-papers"}>Call for papers</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link to={"/Call-For-Special-Session"}>
+                  <Link to={"/call-for-special-session"}>
                     Call for special session
                   </Link>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>
-                  <Link to={"/Accepted-Papers"}>Accepted papers</Link>
+                  <Link to={"/accepted-papers"}>Accepted papers</Link>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>
                   {" "}
-                  <Link to={"/Registered-Papers"}>Registered papers</Link>
+                  <Link to={"/registered-papers"}>Registered papers</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
 
                 <NavDropdown.Item>
-                  <Link to={"/Smart-Com-Schedule"}>Smart Com schedule</Link>
+                  <Link to={"/smart-com-schedule"}>Smart Com schedule</Link>
                 </NavDropdown.Item>
               </NavDropdown>
 
               <Nav.Link>
-                <Link to={"/Paper-Submission-Guidelines"}>
+                <Link to={"/paper-submission-guidelines"}>
                   Paper submission guidelines
                 </Link>
               </Nav.Link>
 
               <Nav.Link>
-                <Link to={"/Registration"}>Registration</Link>
+                <Link to={"/registration"}>Registration</Link>
               </Nav.Link>
 
               <Nav.Link>
-                <Link to={"/Contact-us"}>Contact us</Link>
+                <Link to={"/contact-us"}>Contact us</Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
