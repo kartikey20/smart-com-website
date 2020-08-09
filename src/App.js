@@ -10,6 +10,8 @@ import Registration from "./pages/Registration";
 import ContactForm from "./pages/Contact-us";
 import CallForPapers from "./pages/Call-for-papers";
 import CallForSpecialSession from "./pages/Call-for-special-session";
+import SpecialSession from "./pages/SpecialSession";
+import SpecialSessionPaper from "./components/SpecialSession/SpecialSessionPaper";
 
 function App() {
   return (
@@ -18,17 +20,22 @@ function App() {
         <Navigation />
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route path="/Committee" component={Committee} />
+          <Route path="/committee" component={Committee} />
           <Route
-            path="/Paper-Submission-Guidelines"
+            path="/paper-submission-guidelines"
             component={PaperSubmissionGuidelines}
           />
-          <Route path={"/Registration"} component={Registration} />
-          <Route path={"/Contact-us"} component={ContactForm} />
-          <Route path={"/Call-For-Papers"} component={CallForPapers} />
+          <Route path={"/registration"} component={Registration} />
+          <Route path={"/contact-us"} component={ContactForm} />
+          <Route path={"/call-for-papers"} component={CallForPapers} />
           <Route
-            path={"/Call-For-Special-Session"}
+            path={"/call-for-special-session"}
             component={CallForSpecialSession}
+          />
+          <Route path={"/special-session"} component={SpecialSession} />
+          <Route
+            path={"/special-sessions/:name"}
+            component={SpecialSessionPaper}
           />
         </Switch>
       </Router>
