@@ -51,6 +51,9 @@ const Registration = () => {
   return (
     <>
       <Box m={3}>
+        <Typography variant="h2">Registration</Typography>
+      </Box>
+      <Box m={3}>
         <TableContainer
           style={{ width: 500, margin: "auto" }}
           component={Paper}
